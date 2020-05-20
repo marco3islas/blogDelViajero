@@ -72,10 +72,14 @@ $(".btnClose").click(function(){
 $(".grid figure").mouseover(function(){
 
     $(this).css({"background-position":"right bottom"});
+    $(this).css({"transform":"scale(1.1)"});
+    $(this).css({"z-index":"3"});
 });
 
 $(".grid figure").mouseleave(function(){
     $(this).css({"background-position":"left top"});
+    $(this).css({"transform":"scale(1)"});
+    $(this).css({"z-index":"0"});
 })
 
 /* -------------------------------------------------------------------------- */
@@ -116,5 +120,70 @@ $.scrollUp({
     easingType: "easeOutQuint"
 
 })
+
+/* -------------------------------------------------------------------------- */
+/*                                  CARGADOR                                  */
+/* -------------------------------------------------------------------------- */
+
+$("body").css({"overflow-y":"hidden"})
+
+var cargarImg = $("img");
+var cargarScript = $("script")
+var cargarCss = $("link");
+var cargarVideos = $("video");
+var cargarAudio = $("audio");
+var numItem = 0;
+var valorPorcentaje = 0;
+var incremento = 0;
+var numeroCarga = 0;
+
+var totalObjetos = [];
+
+totalObjetos.push(cargarImg, cargarScript, cargarCss, cargarVideos, cargarAudio);
+
+totalObjetos.forEach(funcionForeach);
+
+                    function funcionForeach(item, index){
+
+                        for (i = 0; i < item.length; i++){
+
+                                numItem++;
+
+                            valorPorcentaje = 100/numItem;
+                            
+                            
+                        }
+
+                        for (let i = 0; i < item.length; i++) {
+
+
+                            $(item[i]).ready(function(){
+    
+    
+                                numeroCarga++
+        
+                                incremento = Math.ceil(numeroCarga * valorPorcentaje);
+    
+                                $("#porcentajeCargador").html(incremento+"%");
+
+                                $("#rellenoCargador").css({"width":incremento+"%"});
+
+                                if(incremento >= 100){
+                                    $("#preloader").delay(450).fadeOut("slow");
+
+                                    $("body").delay(450).css({"overflow-y": "scroll"});
+                                }
+                            })
+                                
+                    }
+
+
+               }
+                        
+                        
+                        
+
+                        
+                    
     
 });
