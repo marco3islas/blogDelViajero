@@ -47,6 +47,7 @@ $(window).scroll(function(){
 
         $("header .fa-bars").css({"filter":"invert(0%)"});
     }
+
 });
 
 /* -------------------------------------------------------------------------- */
@@ -80,6 +81,13 @@ $(".grid figure").mouseleave(function(){
     $(this).css({"background-position":"left top"});
     $(this).css({"transform":"scale(1)"});
     $(this).css({"z-index":"0"});
+});
+
+$(".grid figure").click(function(){
+
+    var vinculo =  $(this).attr("vinculo");
+
+    window.location = vinculo;
 })
 
 /* -------------------------------------------------------------------------- */
@@ -114,7 +122,7 @@ controller.addTween(".contenidoInicio .container", TweenMax.from(
 
 $.scrollUp({
     scrollText:"",
-    topDistance: '100',
+    topDistance: '20px',
     scrollSpeed: 2000,
     animation: 'fade',
     easingType: "easeOutQuint"
@@ -156,34 +164,37 @@ totalObjetos.forEach(funcionForeach);
 
                         for (let i = 0; i < item.length; i++) {
 
+                                preload(i, item);
+                            
+                        }
+                        
+                        
+                    }
+                    
+                    function preload(i, item){
 
+                        setTimeout(function(){
+                            
                             $(item[i]).ready(function(){
-    
-    
+        
+        
                                 numeroCarga++
         
-                                incremento = Math.ceil(numeroCarga * valorPorcentaje);
-    
+                                incremento = Math.floor(numeroCarga * valorPorcentaje);
+        
                                 $("#porcentajeCargador").html(incremento+"%");
-
+        
                                 $("#rellenoCargador").css({"width":incremento+"%"});
-
+        
                                 if(incremento >= 100){
                                     $("#preloader").delay(450).fadeOut("slow");
-
+        
                                     $("body").delay(450).css({"overflow-y": "scroll"});
                                 }
                             })
-                                
-                    }
-
-
-               }
-                        
-                        
-                        
-
-                        
+    
+                     }, i*100);                  
+            }   
                     
     
 });

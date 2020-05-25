@@ -262,7 +262,7 @@ figure p:hover{
 .introArticulo{
     position: relative;
 }
-.fecha{
+.fecha, .fechaCategorias{
     position: absolute;
     right: 10px;
     top: -10px;
@@ -277,7 +277,43 @@ figure p:hover{
 }
 hr{
     border:1px solid #79FF39;  
-    margin: 10px  0;    
+       
+}
+hr:last-child{
+
+    margin: 10px  0; 
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 breadcrumb                                 */
+/* -------------------------------------------------------------------------- */
+
+.breadcrumb{
+    display: flex;
+    justify-content: flex-start;    
+    width: 50%;   
+    background-color: white;
+    padding: 0 25px;
+    margin: 10px 0;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    position: relative;
+    content: url('../img/espacio.png');
+    display: inline-block;
+    padding-right: .5rem !important;
+    background-image: url('../img/separador.png') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    left: -15px;
+    width: 60px;
+    line-height: 50px;
+}
+.breadscrumb li a{
+    margin-left: -20px;
 }
 
 /* ------------------------------- pagination ------------------------------- */
@@ -304,6 +340,75 @@ hr{
 
 .columnaDerecha1{
     top: -250px;
+}
+
+.columnaDerecha1 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 CATEGORIAS                                 */
+/* -------------------------------------------------------------------------- */
+
+.sliderCategorias{
+    width: 100%;
+    height: 450px;
+    
+}
+.sliderCategorias img{
+    filter: brightness(.6);
+    -webkit-filter: brightness(.6);
+    object-fit: cover
+}
+
+.bannerCategorias{
+    height: 450px;
+}
+
+.frase{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: white;    
+}
+.frase h1{
+    font-size: 60px;
+    font-weight: 100;
+    font-family: 'Chewy', cursive;
+}
+.frase h3{
+    font-weight: 100;    
+    
+}
+.imgCategorias{
+    height: 216.63px;
+    width: 302.5px;
+    object-fit: cover;
+
+}
+.fechaCategorias{
+    top: 45px;
+}
+.fechaArticulo{
+    right: 55px;
+    top: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  ARTICULOS                                 */
+/* -------------------------------------------------------------------------- */
+
+.textoArticulo{
+
+    padding: 20px 0;
+    text-align: justify;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -377,6 +482,21 @@ footer{
     .fade-slider{        
         height: 30rem;
     }
+
+    .sliderCategorias{
+        width: 100%;
+        height: 400px;   
+    
+    }
+    
+    .bannerCategorias{
+        height: 400px;
+    }
+
+    .fechaArticulo{
+        right: 55px;
+        top: 5px;
+    }
    
 }
 
@@ -417,9 +537,19 @@ footer{
         top: -323px; 
     }
 
+    .fechaCategorias{
+        top: -270px
+    }
+
+    .fechaArticulo{
+        top: 0;
+    }
+
     .fade-slider{        
         height: 22rem;
     }
+
+    
     
 }
 
@@ -463,9 +593,21 @@ footer{
         top: -370px; 
     }
 
+    .fechaCategorias{
+        top: -265px;
+    }
+    .fechaArticulo{
+        top: 0;
+    }
+    .breadcrumb{
+        width: 100%;
+    }
+
+
     .fade-slider{        
         height: 22rem;
     }
+
     
 }
 
@@ -511,15 +653,47 @@ footer{
         font-size: 12px;
         height: 35px; 
     }
+    .fechaCategorias{
+        top: -265px;
+    }
 
-    .tituloContenido{
+    .fechaArticulo{
+        top: 0;
+        right: 8px; 
+    }
+
+    .tituloContenido, .tituloArticulo{
         font-size: 22px;
     }
+
+    
 
     .fade-slider{        
         height: 20rem;
     }
     .bannerEstatico{
         height: 240px !important;
-    }    
+    }
+    
+    .sliderCategorias{
+        width: 100%;
+        height: 200px;   
+    
+    }
+
+    .breadcrumb{
+        width: 100%;
+    }
+    
+    .bannerCategorias{
+        height: 200px;
+    }
+
+    .frase h1{
+        font-size: 30px;
+    }
+    .frase h3{
+        font-size: 20px;
+        
+    }
 }

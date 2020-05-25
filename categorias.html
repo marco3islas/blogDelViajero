@@ -26,6 +26,7 @@
 <!-- ----------------------------------------------------------------------- -->
 
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -151,29 +152,30 @@
 <!-- ----------------------------------------------------------------------- -->
 <!--                                 BANNER                                  -->
 <!-- ----------------------------------------------------------------------- -->
-<div class="bannerEstatico">
+<div class="bannerCategorias">
 
 </div>
 
 
-    <section class="jd-slider fade-slider">
+<section class="jd-slider fade-slider sliderCategorias">
+    <div class="frase">
+        <h1>RECORRER EL MUNDO</h1>
+        <h3>Es increible</h3>
+     </div>
         <div class="slide-inner">
             <ul class="slide-area">
-
+                
+                
                 <li>
-                    <img src="img/banner01.jpg" alt="Juanito Travel en el Mar" class="img-fluid">
+                    <img src="img/bannerGrande.jpg" alt="Juanito Travel en el Mar" class="img-fluid">
                 </li>
                 
                 <li>
-                    <img src="img/banner02.jpg" alt="Juanito Travel en el Mar" class="img-fluid">
+                    <img src="img/bannerGrande2.jpg" alt="Juanito Travel en el Mar" class="img-fluid">
                 </li>
 
                 <li>
-                    <img src="img/banner03.jpg" alt="Juanito Travel en el Mar" class="img-fluid">
-                </li>
-
-                <li>
-                    <img src="img/banner04.jpg" alt="Juanito Travel en el Mar" class="img-fluid">
+                    <img src="img/bannerGrande3.jpg" alt="Juanito Travel en el Mar" class="img-fluid">
                 </li>
 
             </ul>
@@ -265,79 +267,36 @@
 
   </div>
 
-<!-- ----------------------------------------------------------------------- -->
-<!--                             GRID CATEGORIAS                             -->
-<!-- ----------------------------------------------------------------------- -->
-<div class="container-fluid bg-white contenido py-2 py-md-5 grid">
-
-    <div class="container p-0">
-
-    <div class="d-flex ">
-
-            <div class="d-flex flex-column  columnaUno" >
-
-                <figure class="p-2  bg-info  foto1" vinculo="categorias.html" >
-
-                    <p class="text-uppercase py-1 py-md-2 py-xl-4">Mi viaje por suramérica</p>
-                        
-                </figure>
-
-                <figure class="p-2 thumbnail bg-warning  foto2" vinculo="categorias.html">
-
-                    <p class="text-uppercase py-1 py-md-2 py-xl-4">Mi viaje por áfrica</p>
-                        
-                </figure>
-
-                <figure class="p-2 thumbnail bg-danger d-block d-md-none foto6" vinculo="categorias.html">
-
-                    <p class="text-uppercase py-1 py-md-2 py-xl-4">Mi viaje por asia</p>
-                    
-            </figure>
-
-
-            </div>
-
-            <div class="d-flex flex-column flex-fill columnaDos">
-
-                <div class="d-block d-md-flex">
-
-                    
-                        <figure class="p-2 thumbnail bg-success  flex-fill foto3" vinculo="categorias.html">
-
-                            <p class="text-uppercase py-1 py-md-2 py-xl-4">Mi viaje por centroamérica</p>
-                                
-                        </figure>
-        
-                        <figure class="p-2 thumbnail bg-primary  flex-fill foto4" vinculo="categorias.html">
-
-                            <p class="text-uppercase py-1 py-md-2 py-xl-4">Mi viaje por europa</p>
-                                
-                        </figure>
-
-                </div>
-                        <figure class="p-2 thumbnail bg-danger  foto5" vinculo="categorias.html">
-
-                            <p class="text-uppercase py-1 py-md-2 py-xl-4">Mi viaje por norteamérica</p>
-                            
-                    </figure>
-
-
-                
-
-
-        </div>
-
-    </div>
-    
-</div>
 
 <!-- ----------------------------------------------------------------------- -->
 <!--                             CONTENIDO BLOG                              -->
 <!-- ----------------------------------------------------------------------- -->
 
-<div class="container-fluid mt-4 contenidoInicio">
+<div class="container-fluid bg-white mt-4 contenidoInicio">
 
-    <div class="container">
+    <div class="container ">
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                               breadcrumb                                -->
+<!-- ----------------------------------------------------------------------- -->
+
+        <ul class="breadcrumb">
+
+            <li class="breadcrumb-item">
+
+                <a href="index.html">Inicio</a>
+            
+            </li>
+
+            <li class="breadcrumb-item" >
+                
+                <a href="#">Mi Viaje por Suramérica</a>            
+            
+            </li >
+            
+        </ul> 
+
+
 
         <div class="row">
 
@@ -347,7 +306,7 @@
 
 <!-- ------------------------------ articulo1 ------------------------------ -->
 
-                <div class="row pt-5">
+                <div class="row pt-1">
 
                     <div class="col-12 col-lg-5 ">
 
@@ -356,7 +315,7 @@
                         </a>
 
                        <a href="articulos.html"> 
-                           <img src="img/articulo01.jpeg" alt="Articulo 1" class="img-fluid img-thumbnail width:100% ">
+                           <img src="img/artCat01.jpg" alt="Articulo 1" class="img-fluid img-thumbnail imgCategorias width:100% ">
                         </a>
 
                     </div>
@@ -372,7 +331,7 @@
                             impedit molestiae dolorum excepturi.
                         </p>
                         <a href="articulos.html" class="float-right">Leer más.</a>
-                        <div class="fecha">30.05.2020</div>
+                        <div class="fechaCategorias">30.05.2020</div>
 
                         
                     </div>
@@ -392,7 +351,7 @@
                         </a>
 
                        <a href="articulos.html"> 
-                           <img src="img/articulo02.jpg" alt="Articulo 1" class="img-fluid img-thumbnail width:100% "> 
+                           <img src="img/artCat02.jpg" alt="Articulo 1" class="img-fluid img-thumbnail imgCategorias width:100% "> 
                         </a>
 
                     </div>
@@ -408,7 +367,7 @@
                             impedit molestiae dolorum excepturi.
                         </p>
                         <a href="articulos.html" class="float-right">Leer más.</a>
-                        <div class="fecha">30.05.2020</div>
+                        <div class="fechaCategorias">30.05.2020</div>
 
                         
                     </div>
@@ -438,7 +397,7 @@
                         </a>
 
                        <a href="articulos.html"> 
-                           <img src="img/articulo03.jpg" alt="Articulo 1" class="img-fluid img-thumbnail width:100% "> 
+                           <img src="img/artCat03.jpg" alt="Articulo 1" class="img-fluid img-thumbnail imgCategorias width:100% "> 
                         </a>
 
                     </div>
@@ -454,7 +413,7 @@
                             impedit molestiae dolorum excepturi.
                         </p>
                         <a href="articulos.html" class="float-right">Leer más.</a>
-                        <div class="fecha">30.05.2020</div>
+                        <div class="fechaCategorias">30.05.2020</div>
 
                         
                     </div>
@@ -474,7 +433,9 @@
                         </a>
 
                        <a href="articulos.html"> 
-                           <img src="img/articulo04.jpeg" alt="Articulo 1" class="img-fluid img-thumbnail width:100% "> 
+
+                           <img src="img/artCat04.jpg" alt="Articulo 1" class="img-thumbnail imgCategorias"> 
+
                         </a>
 
                     </div>
@@ -490,7 +451,7 @@
                             impedit molestiae dolorum excepturi.
                         </p>
                         <a href="articulos.html" class="float-right">Leer más.</a>
-                        <div class="fecha">30.05.2020</div>
+                        <div class="fechaCategorias">30.05.2020</div>
 
                         
                     </div>
@@ -510,7 +471,9 @@
                         </a>
 
                        <a href="articulos.html"> 
-                           <img src="img/articulo05.jpeg" alt="Articulo 1" class="img-fluid img-thumbnail width:100% "> 
+
+                           <img src="img/artCat05.jpg" alt="Articulo 1" class="img-thumbnail imgCategorias"> 
+
                         </a>
 
                     </div>
@@ -526,7 +489,7 @@
                             impedit molestiae dolorum excepturi.
                         </p>
                         <a href="#" class="float-right">Leer más.</a>
-                        <div class="fecha">30.05.2020</div>
+                        <div class="fechaCategorias">30.05.2020</div>
 
                         
                     </div>
@@ -553,25 +516,13 @@
             
                         <div class="d-none d-lg-block col-sm col-md-3 columnaDerecha1">
             
-            <!-- ------------------------------ sobre mi ------------------------------- -->
-            
-                            <div class="sobreMi">
-            
-                                <h4>Entradas más vistas</h4>
-            
-                                <img src="img/arepas.jpg" alt=" Foto sobre el escritor" class="img-fluid my-1">
-            
-                                <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Totam aperiam eveniet distinctio ea quo quaerat delectus necessitatibus!
-                                </p>
-                                
-                            </div>
+           
 
             <!-- ----------------------------- PUBLICIDAD ------------------------------ -->
 
                                 <div class="ads my-4">
 
-                                    <img src="img/ad01.jpg" class="img-fluid">
+                                    <img src="img/ad03.png" class="img-fluid">
 
                                 </div>
 
@@ -579,12 +530,12 @@
 
                                 <div class="my-4">
                                     
-                                    <h5>Comentarios Recientes</h5>
+                                    <h5>Artículos destacados.</h5>
 
                                     <div class="d-flex my-3">
 
                                         <div class="w-100 w-xl-50 pr-3" >
-                                            <a href="comentarios.html"> 
+                                            <a href="comentarios"> 
                                                 <img src="img/com01.jpeg" alt="Lorem ipsum dolor sit amet consectetur" class="img-fluid">
                                             </a>
                                         </div>
@@ -602,7 +553,7 @@
                                     <div class="d-flex my-3">
 
                                         <div class="w-100 w-xl-50 pr-3" >
-                                            <a href="comentarios.html"> 
+                                            <a href="comentarios"> 
                                                 <img src="img/com02.jpg" alt="Lorem ipsum dolor sit amet consectetur" class="img-fluid">
                                             </a>                                        
                                         </div>
@@ -620,7 +571,7 @@
                                     <div class="d-flex my-3">
 
                                         <div class="w-100 w-xl-50 pr-3" >
-                                            <a href="comentarios.html"> 
+                                            <a href="comentarios"> 
                                                 <img src="img/com03.jpg" alt="Lorem ipsum dolor sit amet consectetur" class="img-fluid">
                                             </a>                                        
                                         </div>
@@ -712,7 +663,7 @@
 
 <!-- --------------------------- GRID CATEGORIA ---------------------------- -->
 
-            <div class="col-6 footerIzquierdo d-none d-md-block">
+            <div class="col-6 footerIzquierdo d-none d-md-block grid">
 
                 <div class="bg-white contenido gridFooter">
 
