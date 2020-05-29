@@ -194,7 +194,27 @@ totalObjetos.forEach(funcionForeach);
                             })
     
                      }, i*100);                  
-            }   
+            }
+            
+/* -------------------------------------------------------------------------- */
+/*                           DESLIZADOR DE ARTICULOS                          */
+/* -------------------------------------------------------------------------- */
+
+$(".deslizadorArticulos").jdSlider({
+
+    wrap: '.slide-inner',
+    slideShow: 3,
+    slideToScroll: 1,
+    isLoop: true,
+    responsive: [{
+        viewSize: 360,
+        settings:{
+            slideShow: 2,
+            slideToScroll: 1
+        }
+    }]
+
+});
                     
     
 });

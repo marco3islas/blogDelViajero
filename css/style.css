@@ -48,7 +48,7 @@ header .logotipo{
     background-color:#1475e0 ;
 }
 .fa-instagram{
-    background-color: #b18768;
+    background-color: rgb(81, 91, 212);
 }
 
 .fa-twitter{
@@ -347,6 +347,10 @@ hr:last-child{
     color: black;
 }
 
+.columnaDerecha2{
+    top: -335px
+}
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -415,6 +419,113 @@ hr:last-child{
     height: 400px;
     object-fit: cover;
 }
+.botonesCompartir{
+    width: 100%;    
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.botonRegresar{
+    display: none;
+}
+
+.btnCompartir, .btnCompartir span{
+    border: 0;
+    padding: 8px 4px;
+    color: white;
+    font-size: 10px;
+}
+.btn-face{
+    background-color: #1475E0;
+    margin-left: 5px;
+}
+.btn-insta{
+    background-image: linear-gradient(45deg, rgb(81, 91, 212), rgb(129, 52, 175));
+    margin-left: 5px;
+}
+
+.btn-tweet{
+    background-color: #00a6FF;
+    margin-left: 5px;
+}
+.avanzarRetroceder{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Deslizador Articulos                            */
+/* -------------------------------------------------------------------------- */
+
+.deslizadorArticulos{
+    height: 225px;
+
+}
+.imgArticuloDeslizador{    
+    height: 100px;
+    max-width: 180px;
+    width: 100%;
+    object-fit: cover;          
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Opiniones                                 */
+/* -------------------------------------------------------------------------- */
+
+.gridOpiniones{
+    display: grid;
+    grid-template-columns: repeat(1fr 4);
+    grid-template-rows: 180px 180px;
+    row-gap: 20px;
+    align-content: center;
+}    
+
+.gridOpiniones .item1{
+    grid-area: 1/1/2/2;
+    margin: auto 0;    
+}
+.gridOpiniones img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 0 5px;
+}
+
+
+.gridOpiniones .item2{
+    grid-area: 1/2/2/4;
+    margin: auto 0; 
+}
+
+.gridOpiniones .item3{
+    grid-area: 2/3/3/4;
+    margin: auto 0; 
+}
+.gridOpiniones .item4{
+    grid-area: 2/1/3/3;
+    margin: auto 0; 
+}
+.usuarioFecha{
+    color: #555;
+    text-align: right;
+    margin: 20px;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            FORMULARIO OPINIONES                            */
+/* -------------------------------------------------------------------------- */
+
+.formOpiniones{
+    margin: 30px 0;
+}
+
+
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                                   FOOTER                                   */
@@ -479,6 +590,10 @@ footer{
     .columnaDerecha1{
         top: -310px;
     }
+    
+    .columnaDerecha2 {
+        top: -404px;
+    }
 
     .fecha{   
         top: 20px; 
@@ -508,6 +623,11 @@ footer{
         height: 400px;
         object-fit: cover;
     }
+
+    .botonRegresar{
+        display: none;
+    }
+
    
 }
 
@@ -564,6 +684,11 @@ footer{
         height: 350px;
         object-fit: cover;
     }
+
+    .botonRegresar{
+        display: none;
+    }
+
     
 }
 
@@ -575,10 +700,7 @@ footer{
 
     header .logotipo{
         width: 60%;
-    }
-    
-
-    
+     }    
    
     .menu{
         top: 0%;
@@ -622,6 +744,11 @@ footer{
     .fade-slider{        
         height: 22rem;
     }
+
+    .botonRegresar{
+        display: none;
+    }
+   
 
     
 }
@@ -697,7 +824,15 @@ footer{
     }
 
     .breadcrumb{
-        width: 100%;
+      display: none;
+    }
+
+    .botonRegresar{
+        display: block;
+        width: 150px;
+        margin: 10px 0;
+        padding: 6px 4px;
+        border-radius: 8px;
     }
     
     .bannerCategorias{
@@ -714,5 +849,29 @@ footer{
     .frase h3{
         font-size: 20px;
         
+    }
+    .avanzarRetroceder{
+        display: none;
+    }
+
+    .deslizadorArticulos{
+        margin: 10px 0;
+        display: block;
+        
+    }
+    .tituloArticuloMiniatura {
+        font-size: 13px;
+        text-align: center;
+    }
+    .deslizadorText{
+        font-size: 9px;
+        text-align: justify;
+        padding: 0 5px;
+    }
+    .gridOpiniones .item2, .gridOpiniones .item3{
+        text-align: center;
+    }
+    .usuarioFecha{
+        text-align: center;
     }
 }
